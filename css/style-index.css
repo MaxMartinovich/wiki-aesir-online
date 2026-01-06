@@ -1,3 +1,11 @@
 ul {
   list-style: none;
 }
+
+header {
+  text-align: center;
+  background-color: rgb(0 0 0 / 0.9);
+}
+.logo-principal {
+  width: 200px;
+}
