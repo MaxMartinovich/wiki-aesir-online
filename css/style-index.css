@@ -5,6 +5,11 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1; /* ocupa todo o resto da largura */
+  padding: 1.5rem;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -37,6 +42,18 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+aside {
+  padding-left: 1.5rem;
+  background-color: #000000b3;
+  overflow-x: hidden;
+  min-height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  left: 0;
+}
+
 h2 {
   font-family: "Fenix", serif;
   font-weight: bold;
@@ -46,8 +63,12 @@ h2 {
 
 a {
   font-family: "Poppins", sans-serif;
-  color: #da9631;
+  color: #0484c4;
   font-size: 14px;
+}
+
+a:hover {
+  color: #0b4b62;
 }
 
 footer {
@@ -57,10 +78,63 @@ footer {
   height: 70px;
 }
 /*=========================================TAGS CLASSES====================================================*/
+.titulo-principal {
+  font-family: "Fenix", serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(148, 4, 90),
+    rgb(4, 132, 196),
+    rgb(71, 220, 247)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: -200px;
+}
+
 .logo-principal {
   height: 80px;
   width: auto;
 }
+.layout-wiki {
+  display: flex;
+  min-height: calc(100vh - 70px); /* desconta o header */
+}
+
+.navegacion-wiki {
+  width: 200px; /* largura real de painel */
+  background-color: rgba(0, 0, 0, 0.7);
+
+  padding: 1.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: sticky;
+  top: 70px; /* gruda abaixo do header */
+  height: calc(100vh - 70px);
+
+  overflow-y: auto;
+}
+
+.side-div {
+  font-family: "Fenix", serif;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.side-div:hover {
+  color: #0484c4;
+}
+
 .marcante {
   display: flex;
   width: 100%;
@@ -70,7 +144,7 @@ footer {
 .index-wrapper {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 10px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -97,4 +171,11 @@ footer {
   color: gray;
   text-align: center;
   font-size: 20px;
+}
+
+.alinhamento {
+  display: none;
+  padding: 0px 0px 10px 0px;
+  margin: 0;
+  list-style: none;
 }
