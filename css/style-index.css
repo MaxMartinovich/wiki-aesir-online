@@ -49,6 +49,13 @@ a {
   color: #da9631;
   font-size: 14px;
 }
+
+footer {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70px;
+}
 /*=========================================TAGS CLASSES====================================================*/
 .logo-principal {
   height: 80px;
@@ -67,11 +74,11 @@ a {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 3rem;
+  gap: 20px;
 }
 
 .categoria h2 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 10px;
   color: white;
   font-size: 1.2rem;
 }
@@ -82,5 +89,12 @@ a {
 }
 
 .categoria li {
-  margin-bottom: 1px;
+  margin-bottom: 3px;
+}
+
+.embaixo {
+  font-family: "Fenix", serif;
+  color: gray;
+  text-align: center;
+  font-size: 20px;
 }
