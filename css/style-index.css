@@ -63,6 +63,17 @@ h2 {
   color: #ffffffde;
 }
 
+h3 {
+  font-family: "Fenix", serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffffde;
+  margin-right: 220px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
 a {
   font-family: "Poppins", sans-serif;
   color: #0484c4;
