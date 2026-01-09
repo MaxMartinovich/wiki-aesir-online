@@ -79,6 +79,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   height: 70px;
 }
+
 /*=========================================TAGS CLASSES====================================================*/
 .titulo-principal {
   font-family: "Fenix", serif;
@@ -181,4 +182,38 @@ footer {
   padding: 0px 0px 10px 0px;
   margin: 0;
   list-style: none;
+}
+
+.box-crearpj {
+  height: 100vh; /* importante */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #0484c4;
+  font-size: 14px;
+}
+
+.box-crearpj ol {
+  max-width: 700px;
+  margin: 30px auto;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.box-crearpj li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.box-crearpj img {
+  display: block;
+  margin: 40px auto 0;
+  width: 300px;
+}
+
+.img-wrapper img {
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 550px;
 }
