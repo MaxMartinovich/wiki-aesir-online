@@ -6,8 +6,16 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   flex: 1; /* ocupa todo o resto da largura */
   padding: 1.5rem;
+  align-items: center;
+}
+
+main > * {
+  max-width: 1100px;
+  width: 100%;
 }
 
 body {
@@ -93,6 +101,7 @@ footer {
 
 /*=========================================TAGS CLASSES====================================================*/
 .titulo-principal {
+  width: 100vw;
   font-family: "Fenix", serif;
   background-image: linear-gradient(
     to bottom,
@@ -103,11 +112,13 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   color: black;
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
-  margin-left: -200px;
+  margin-left: calc(-1 * 200px);
 }
 
 .logo-principal {
