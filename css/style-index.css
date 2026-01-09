@@ -13,11 +13,7 @@ main {
 body {
   position: relative;
   min-height: 100vh;
-
-  background-image: url(/img/plano-hondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: hsl(0, 0%, 0%);
 }
 
 body::before {
@@ -153,7 +149,7 @@ footer {
 
 .categoria h2 {
   margin-bottom: 10px;
-  color: white;
+  color: hsl(0, 0%, 95%);
   font-size: 1.2rem;
 }
 
